@@ -1,27 +1,24 @@
-Transaction Categorizer
+# Document Q&A Assistant
+
+> 🚧 In progress — building summer 2026.
+
+A retrieval-augmented (RAG) assistant that answers questions about your own documents — notes, PDFs — and cites the source passages it used.
+
+## Why
+A hands-on way to learn production-style LLM engineering: chunking, embeddings, vector search, and grounding answers in real data instead of letting the model hallucinate.
+
+## Planned stack
+Python · FastAPI · LLM API · vector search (FAISS / Chroma) · React
+
+## Planned features
+- [ ] Upload PDFs / text and chunk them sensibly
+- [ ] Generate embeddings + store in a vector DB
+- [ ] Similarity search to retrieve relevant context
+- [ ] Grounded answers with citations
+- [ ] Graceful "not in the documents" handling
+- [ ] Upload + chat UI, deployed
+
+## Status
+Setting up the project.
 
 
-In progress — building summer 2026.
-
-
-
-A machine-learning model that reads a bank-transaction description and predicts its spending category (Groceries, Dining, Transport, …). Designed to plug into my Budget & Expense Tracker for automatic categorization.
-
-Planned stack
-
-Python · scikit-learn · Pandas · NumPy
-
-Planned features
-
-
- Labeled transaction dataset (public or self-labeled)
- Data cleaning & prep with Pandas
- TF-IDF feature engineering
- Train + compare models (logistic regression, random forest)
- Evaluate: accuracy / F1 + confusion matrix
- Export model + expose it for the tracker to call
-
-
-Status
-
-Gathering the dataset.
